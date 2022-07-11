@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>David Lee</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="user.png" >
+   <style>
+      .lightbox-wrap{
+      position: fixed;
+      left: 0;
+      top: 0;
+      /* 視野寬高 */
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0,.2);
+      /* position: relative; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      /* flex寫在父層 對子層作用 */
+   }
+
+   .lightbox{
+      width: 300px;
+      height: 300px;
+      background-color: #04141f;
+       /* position: absolute; */
+         top: 0px;
+         bottom: 0px;
+         left: 0px;
+         right: 0px;
+         margin: auto; /*不用這個方法 因為x會跑掉*/
+         position: relative;
+         
+   }
+
+   .lightbox>img{
+      
+      position: absolute;
+         top: 0px;
+         bottom: 0px;
+         left: 0px;
+         right: 0px;
+         margin: auto;
+   }
+   </style>
+</head>
+
+<body>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Skill</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
+            <li><a href="mailto:davidtnli3211@gmail.com" target="_blank"><img src="./images/email.png" alt="email"></a></li>
+            <!-- <li><a href="#"><img src="./images/line.png" alt=""></a></li> -->
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">　　I'm David Lee</h1>
+            <h3><span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Logic will get you from A to B. Imagination will take you everywhere.</span></h3>
+            <h3 align="right"><span>--Albert Einstein</span></h3>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img   src="images/me1.jpg" alt="" />
+            <!-- <img class="profile-pic"  src="images/jocelyn.jpg" alt="" /> -->
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+            <br>
+            <p>畢業於國立中興大學應用數學系，曾就讀國立成功大學數學系，求學過程中深感純數學之艱深，心餘力絀，能力有所不及。為了多認識數學的彈性與生活的應用，轉學至中興應用數學系學習。
+               <br/>求學過程中因修習了數值分析以及數學規劃，進而接觸到程式語言的基礎邏輯，爾後便對程式語言產生興趣，學習過C++、C#、Python、Matlab、R語言。<br/><br/>
+            畢業後先完成服兵役之義務，擔任替代役的社會役於文山社福中心服務。從社工與個案的互動中學習到不少溝通技巧，例如傾聽個案需求多於制式地解說、設身處地思考解決辦法而非直接予以物資等。也從送公文的途中認識公家單位之辦事流程，更曾協助社工輔導高中個案的課業，進而榮幸地得到社工們的推薦、市政府之肯定，榮獲績優役男之殊榮。服替代役的一年當中可謂獲益良多。<br/><br/>
+            現今，結訓於文化大學主辦、由勞動部補助之AI大數據人才養成課程。其中學習到Linux之基礎架構，Python程式碼之精進、資料庫串接以及數據視覺化。而獲益最多的莫過於小組專案，在富有挑戰性的專題下，組員們依專業各司其職，最後再由組長進行彙整調整，並達到專案之目標。除了自己班級的小組專案外，課程後半部分也有企業提出的專案實作，需結合前端、雲端的團隊共同作業，讓我們可以更貼近業界的狀況。
+            <br/><br/>
+            休閒興趣為網球，於成功大學時為網球社幹部，曾擔任過成功盃之總召。就讀中興大學時參加網球男生代表隊，參與過大專盃、福興盃等校際比賽，並曾任中興大學舉辦之四校聯招體育生的裁判。
+            <br/><br/>
+
+            <strong>座右銘<<唯有盡人事，方可聽天命>></strong>。
+            <br>
+            </p>
+            <br><br><br>
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>David Lee</span><br>
+						   <span>Taipei City , Taiwan (R.O.C.)						         
+                     </span><br>
+                     <a href="https://www.google.com/intl/zh-TW_tw/gmail/about/" target="_blank"><img src="./images/email.png" alt="email"><br>davidtnli3211@gmail.com</a><br>
+                     <!-- <a class="nav-item nav-link"  href="https://line.me/ti/p/THPNFeJgN1" target="_blank">LINE_ID:leosmile  <img src="./images/line.png" alt="line"></a> -->
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="images/簡歷.png" target="_blank" class="button"><i class="fa fa-download"></i> Download Resume　</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Skill
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Skill Detail</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            
+            <div class="row item">
+
+               <div class="twelve columns black_font">            
+                  <p>
+                      <li>Python</li>
+                      - pandas,numpy dataframe之基本操作。</br>
+                      - 利用requests,selenium爬蟲，並使用fake-useragent偽裝讓爬蟲執行可更加順利。</br>
+                      - 串聯並將所需之資料匯入SQL/NOSQL資料庫。</br>
+                      - 利用Flask與Swagger架設API網頁，連接至資料庫進行新增、修改、刪除、查詢。</br>
+                      - 使用jieba套件進行自然語意分析，並搭配套件產出文字雲。</br>
+                      <br/>
+                      <li>SQL/NOSQL</li>
+                      - MYSQL的基礎語法使用。</br>
+                      - MongoDB的基礎語法使用。</br><br/>
+                      <li>Linux</li>
+                      - 在Centos7架設網站、基本語法操作。<br>
+                      - 在Ubuntu架設網站、基本語法操作及使用crontab設定定期排程。</br><br/>
+                      <li>Cloud</li>
+                      - 使用GCP建置虛擬機與匯入雲端MYSQL，並在雲端架設定時爬蟲機。</br>
+                      - 使用AZURE的基本操作。</br>
+                      - 使用AWS的基本操作。</br></br>
+                      <li>Data Visualize</li>
+                      - Tableau Public <br>
+                      - PowerBI <br>
+                      - Orcale <br>
+                      - ELK <br>
+                      - Splunk<br></br>
+
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+          </div> <!-- End Education -->
+
+            </div> <!-- item end --></div> <!-- main-col end --></section>  <!-- Resume Section End -->
+
+
+
+   
+   <section id="Education">
+         <div class="row skill">
+
+            <div class="three columns header-col">
+               <h1><span>Education</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+               <div class="row item">
+
+                  <div class="twelve columns black_font">
+
+                     <h3>NTC AI大數據養成班</h3>
+               
+                     <p>
+                         </p><li>Mar 2022 - Aug 2022</li>
+                         - 分為兩個階段 A:課堂學習 B:企業實習/產品實作<br>
+                         - 透過每天密集的學習，並以小組專案來驗收學習成果<br>
+                         - 最後與前端、雲端團隊合作，共同推出產品的專案實作<br>
+                     <p></p>
+
+                     <h3>國立中興大學 應用數學系</h3>
+               
+                     <p>
+                         </p><li>Feb 2017 - Jun 2019</li>
+                     <p></p>
+
+                     <h3>國立成功大學 數學系&emsp;<b>肄業</b></h3>
+               
+                     <p>
+                         </p><li>Sep 2012 - Jun 2015</li>
+                         <!-- <p >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;肄業</p> -->
+                     <p></p>
+                  </div>
+         </div> <!-- main-col end -->
+
+         </div> <!-- End skills -->
+
+      </div></section>
+
+
+   <!-- Skills
+      ----------------------------------------------- -->
+     <!--  <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>
+
+            </p>
+
+        <div class="bars">
+
+           <ul class="skills">
+             <li><span class="bar-expand photoshop"></span><em>Python</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Data Visualize</em></li>
+            <li><span class="bar-expand wordpress"></span><em>SQL/NOSQL</em></li>
+            <li><span class="bar-expand css"></span><em>Cloud</em></li>
+            <li><span class="bar-expand html5"></span><em>Linux</em></li> -->
+                  <!-- <li><span class="bar-expand jquery"></span><em></em></li> -->
+          <!-- </ul> -->
+               
+               <!-- GO to my GitHub  <a href="https://github.com/jolenechen123 target="_blank""><img src="./images/github-logo.png" alt=""></a> -->
+               
+               
+        <!-- </div>end skill-bars -->
+
+      <!-- </div> main-col end -->
+
+      <!-- </div> End skills -->
+
+   <!-- </section>  Resume Section End -->
+
+   
+   <!-- Work
+      ----------------------------------------------- -->
+
+   <!-- Portfolio Section
+   ================================================== -->
+
+      <!-- Work
+      ----------------------------------------------- -->
+
+
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>作品集</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <!-- <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/text2.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>文字辨識</h5>
+                              <p>使用python串接google api進行文字辨識</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> --> <!-- item end -->
+
+               <!-- <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/math12.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>演算法</h5>
+                              <p>協同過濾演算法-User base</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  --><!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/crawler.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta ">
+          					      <h5 style="color:black;">爬蟲</h5>
+<!--                               <p>python靜態、動態爬蟲</p> -->
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/API.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>API</h5>
+                              <!-- <p>使用Flask、Swagger套件串聯資料庫</p> -->
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end-->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/Cover2.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>資料視覺化</h5>
+                              <!-- <p>Tableau、ELK、PowerBI</p> -->
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> 
+               <!-- item end-->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/teamwork.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>小組專案</h5>
+                              <!-- <p>Photography</p> -->
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+<!-- 
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/origami.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Origami</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> --> <!-- item end -->
+<!-- 
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/retrocam.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Retrocam</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> -->  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <!-- <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/text.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>文字辨識 - 智慧小護士</h4>
+			      <p>針對需要藥品資訊之年長者或外籍看護，利用隨手可得的行動裝置掃瞄藥單之藥品名稱，經過AI智能辨識比對後提供藥品用途、副作用及圖片，並以國(台)語音播放出來方便年長者、外籍看護使用。<br><br>- 使用Python搭配CV2先對圖片進行裁切，再用python引用google文字辨識,對藥單進行辨識</p><br>
+               <span class="categories"><i class="fa fa-tag"></i>Google, Text recognition，Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jolenechen123/aiNurse/blob/master/google_api_xy.py" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-01 End -->
+
+         <!-- <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/math11.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>演算法 - 你的演算法書櫃</h4>
+			      <p>整合各大通路的新書、舊書以及電子書資訊與評價，依據使用者的閱讀偏好，經由演算法產生最適合他的個性化的推薦，並且結合二手書平台進行比價與提供網頁購買連結，能讓使用者能擁有最划算的選擇。<br><br>- 將爬取好的各大書城的書籍資料用pandas整理好,用python產出CF-user base之矩陣，利用餘弦定理排序使用者與使用者之間的相關性，取出關聯高的進行推薦</p>
+               <span class="categories"><i class="fa fa-tag"></i>CF, Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jolenechen123/book_case/blob/master/Finally_CF.py" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/python.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Python爬蟲</h4>
+			      <p>先了解網站結構，靜態網頁利用css、xpath的定位抓取資料，動態網頁則使用Selenium爬取網站內容,最後再利用pandas進行資料清理，再匯入資料庫。<br>- GoogleMap(爬取餐廳評論)<br>- 痞客邦(爬取餐廳日誌)<br>- 各大新聞網(爬取頭條新聞)<br></p>
+               <span class="categories"><i class="fa fa-tag"></i>靜態, 動態, Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/Davidtnli/python_practice/tree/Crawler_Practice" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/elkk.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>API</h4>
+			      <p>利用Python中的Flask套件與Swagger套件結合，架設API網頁並串聯資料庫，實現新增、修改、刪除、查詢。</p>
+               <span class="categories"><i class="fa fa-tag"></i>API、Flask、Swagger、Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/Davidtnli/python_practice/tree/API_Practice" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> <!-- modal-04 End-->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/tableau.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>視覺化</h4>
+			      <p>- 使用Tableau產出圖表，針對餐飲集團進行分析。<br>- 使用ELK產出圖表，針對某專櫃銷售進行分析。<br>- 使用PowerBI產出圖表，針對某連鎖餐飲兩事業處營收進行分析。<br></p>
+               <span class="categories"><i class="fa fa-tag"></i>Tableau、ELK、PowerBI、視覺化</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/Davidtnli/Visualization" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> <!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>小組專案</h4>
+			      <p>於文化大學AI大數據養成班中，配合組員們一起進行Python之一條龍專案，針對王品與瓦城兩大餐飲集團進行聲量分析。<br>個人負責Google Map的評論爬蟲、利用Flask、Swagger套件建立API提供json格式，與部分視覺化圖表。</p>
+               <span class="categories"><i class="fa fa-tag"></i>爬蟲、一條龍、網頁</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://restanalyze.azurewebsites.net/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> <!-- modal-06 End -->
+
+         <!-- <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Origami</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-07 End -->
+
+         <!-- <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+    <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <!-- <h1><span>Client Testimonials</span></h1> -->
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p><br>Mathematical Analysis is as Extensive as Nature Herself.<br>
+                           
+                           </p>
+                           <cite>Joseph Fourier</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>
+                              It is not knowledge, but the act of learning, not the possession of but the act of getting there, which grants the greatest enjoyment. <br>
+                           
+                           </p>
+                           <cite>Carl Friedrich Gauss</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <!-- <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">您好,如有疑問歡迎聯絡
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns"> -->
+
+               <!-- form -->
+               <!-- <form action="mailto:jolenechen123@gmail.com" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> --> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <!-- <div id="message-warning"> Error boy</div> -->
+               <!-- contact-success -->
+				   <!-- <div id="message-success"> -->
+                 <!--  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Jocelyn Chen<br>
+						   1600 Amphitheatre Parkway <br>
+						   Mountain View, CA 94043 US<br>
+						   <span>(02) 8888-8888</span>
+					   </p>
+
+				   </div> -->
+
+               <!-- <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">2 Days Ago</a></b>
+                     </li>
+                     <li>
+                        <span>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">3 Days Ago</a></b>
+                     </li>
+                  </ul>
+
+		         </div> -->
+
+    <!--         </aside>
+
+      </div>
+
+   </section> --> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/people/%E9%99%B3%E5%BF%97%E5%AF%A7/100001616653429" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+               <li><a href="https://www.instagram.com/ning8428/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-skype"></i></a></li> -->
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li> 
+               <li>Edited by Jocelyn Chen in 2018.</li>  
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+   <div class="lightbox-wrap">
+      <div class="lightbox">
+         <img src="./images/qr.jpg" alt="">
+      </div>
+   </div>
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+   <script>
+      $("#lineopen").click(function(){
+         $(".lightbox-wrap").fadeIn().css("display","flex");
+      });
+
+      $(".lightbox-wrap").click(function(){
+         $(".lightbox-wrap").fadeOut();
+      });
+
+   </script>
+</body>
+
+</html>
